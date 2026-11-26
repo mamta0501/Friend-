@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            ellipse at center,
+            #142b50 0%,
+            #09172d 50%,
+            #020713 100%
+        );
+
+    font-family: Georgia, serif;
+    color: #ffe6a5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    min-height: 100vh;
+
+    padding: 25px 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ffe5a0;
+
+    text-shadow:
+        0 0 10px #ffc34d,
+        0 0 25px #ffb52e,
+        0 0 45px #e6a02c;
+
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #c7c4c0;
+
+    margin-bottom: 25px;
+}
+
+.art-container {
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 6 / 7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #102443,
+            #071326 70%
+        );
+
+    box-shadow:
+        0 0 20px #1d5687,
+        0 0 45px #174675,
+        inset 0 0 35px #15365b;
+}
+
+#krishnaArt {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.draw {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    stroke-width: 3;
+
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+
+    opacity: 0;
+
+    filter:
+        drop-shadow(0 0 5px #ffc34d)
+        drop-shadow(0 0 12px #ffb52e);
+}
+
+.gold {
+    stroke: url(#gold);
+}
+
+.blue {
+    stroke: url(#blue);
+
+    filter:
+        drop-shadow(0 0 6px #40aaff)
+        drop-shadow(0 0 14px #168bff);
+}
+
+button {
+    margin-top: 30px;
+
+    padding: 15px 30px;
+
+    border: 1px solid #ffdc8b;
+    border-radius: 35px;
+
+    background: linear-gradient(
+        135deg,
+        #172e4e,
+        #071326
+    );
+
+    color: #ffe5a0;
+    font-size: 16px;
+
+    box-shadow:
+        0 0 12px #e9b44e,
+        0 0 25px #956a2d;
+
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.footer {
+    margin-top: 25px;
+
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    color: #f8d68c;
+
+    text-shadow:
+        0 0 10px #ffbb47;
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 11px;
+    }
+
+    .container {
+        padding: 20px 12px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+  }
